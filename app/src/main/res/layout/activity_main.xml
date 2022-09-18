@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white"
+        android:gravity="center"
+        app:titleMarginStart="160dp"
+        android:background="@color/design_default_color_primary_variant"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Start (1)"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Stop (0)"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/leftBtn"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/arrow_left_white_48"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="left"/>
+
+        <Button
+            android:id="@+id/rightBtn"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/arrow_right_white_48"
+            android:textStyle="bold"
+            android:text="right"/>
+
+
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switchMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+       android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="440dp"
+        android:text="Automatic Mode :"
+        android:textSize="30sp"
+        android:checked="false"
+        android:textOff="OFF"
+        android:textOn="ON"/>
+
+</RelativeLayout>
